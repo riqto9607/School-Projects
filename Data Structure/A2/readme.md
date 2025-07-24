@@ -47,17 +47,6 @@ This program simulates a **student record management system** using a **Binary S
 
 ---
 
-## 📁 Sample Input Format (`student.txt`)
-ID: 123
-Name: John Doe
-Address: ...
-DOB: ...
-Phone No: ...
-Course: ...
-CGPA: ...
-
----
-
 ## 👨‍💻 My Contributions
 
 - Implemented key BST functions like `deepestNodes()`, `printPath()`, and `CloneSubtree()`
