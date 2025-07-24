@@ -24,3 +24,19 @@ graph TD
     B --> D[ML Model]
     D --> E[Risk Levels]
     E --> F[Reports/Alerts]
+```
+
+### 🔬 Feature Engineering
+- Rolling statistics (mean, std, slope)
+- Derived metrics (e.g., temperature-to-voltage ratios)
+- Component interaction features
+
+### 🤖 Model Training
+- Algorithms: Random Forest, XGBoost, SVM
+- Techniques: SMOTE for class imbalance, GridSearchCV for tuning
+- Performance: Achieved AUC = 0.87
+
+### ⏱️ Real-Time Integration
+- Processes telemetry with ~1.6s latency
+- Supports CSV and JSON I/O
+- Generates interpretable risk reports
