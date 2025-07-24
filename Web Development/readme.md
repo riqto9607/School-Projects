@@ -71,5 +71,5 @@ Purrfectly Meow is a comprehensive cat management platform created to support ca
 
 **Wong Pei Kei**  
 Contributor to **About Us** & **Giving Back** Sections  
-Thank you for viewing this project — I’m excited to apply these skills in real-world web development roles!
+Thank you for viewing this project!
 
