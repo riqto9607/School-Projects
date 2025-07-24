@@ -72,13 +72,6 @@ The system manages student borrowing records using the following data structures
 
 ---
 
-## 💻 Sample Executable
-
-You can download and run the project from the executable file here:  
-🔗 [Group52.exe](https://github.com/riqto9607/School-Projects/blob/main/Programming/Group52.exe)
-
----
-
 ## 📎 Sample Files
 
 - `student.txt` – Contains student data  
