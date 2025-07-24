@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="images/icon.png" type="image/x-icon">
+    <title>Booking form</title>
+    <link rel="stylesheet" href="appointment.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light transparent fixed-top">
+        <a href="mainpage.html" class="navbar-brand ml-4">Purrfectly Meow</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon bg-white"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto mr-4">
+                <li class="nav-item active">
+                    <a class="nav-link" href="mainpage.html">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="servicesDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Services</a>
+                    <div class="dropdown-menu" aria-labelledby="servicesDropdown">
+                        <a class="dropdown-item" href="daycare.html">Day Care</a>
+                        <a class="dropdown-item" href="boarding.html">Boarding</a>
+                        <a class="dropdown-item" href="grooming.html">Grooming</a>
+                        <a class="dropdown-item" href="training.html">Training</a>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="givingback.html">Giving Back</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="donation.html">Donation</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="aboutUsDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">About Us</a>
+                    <div class="dropdown-menu" aria-labelledby="aboutUsDropdown">
+                        <a class="dropdown-item" href="aboutus.html">History</a>
+                        <a class="dropdown-item" href="FAQs.html">FAQs</a>
+                        <a class="dropdown-item" href="aboutus.html">Contact Us</a>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="login.html">Account Login</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <div class="container">
+        <form class="form-group" autocomplete="off">
+            <div id="form">
+                <h1 class="text-white text-center mt-4">Booking Now</h1>
+
+                <div id="first-group">
+
+                    <div id="content">
+                        <i class="fa fa-user" aria-hidden="true"></i>
+                        <input type="text" id="input-group" placeholder="First name" required>
+                    </div>
+
+                    <div id="content">
+                        <i class="fa fa-phone" aria-hidden="true"></i>
+                        <input type="number" id="input-group" placeholder="Phone number" title="format 60123456789" required>
+                    </div>
+
+                    <div id="content">
+                        <i class="fa fa-calendar" aria-hidden="true"></i>
+                        <input type="text" id="input-group" placeholder="Arrival Date" title="format DD/MM/YY" required>
+                    </div>
+
+                    <div id="content">
+                        <i class="fa fa-users" aria-hidden="true"></i>
+                        <select id="input-group" style="background-color: black;" required>
+                            <option value="">No.of cats</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                            </select>
+                    </div>
+
+                </div>
+
+                <div id="second-group">
+
+                    <div id="content">
+                        <i class="fa fa-user" aria-hidden="true"></i>
+                        <input type="text" id="input-group" placeholder="Last name" required>
+                    </div>
+
+                    <div id="content">
+                        <i class="fa fa-envelope-o" aria-hidden="true"></i>
+                        <input type="email" id="input-group" placeholder="Email" required>
+                    </div>
+
+                    <div id="content">
+                        <i class="fa fa-calendar" aria-hidden="true"></i>
+                        <input type="text" id="input-group" placeholder="Departure Date" title="format DD/MM/YY" required>
+                    </div>
+
+                    <div id="content">
+                        <i class="fa fa-users" aria-hidden="true"></i>
+                        <select id="input-group" style="background-color: rgb(1, 1, 1);" required>
+                            <option value="">Service Type</option>
+                            <option value="Day Care">Day Care</option>
+                            <option value="Boarding">Boarding</option>
+                            <option value="Training">Training</option>
+                            <option value="Grooming">Grooming</option>
+                        </select>
+                    </div>
+            
+                </div>
+
+                <button type="submit" value="Submit" id="submit-btn">Book Now</button>
+
+            </div>
+        </form>
+    </div>
+
+    <footer class="footer fixed-bottom text-white">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-12 text-center">
+                    <p>To schedule an appointment for any of our services, including grooming, boarding, or
+                        consultations, please contact us during our business hours or use our online appointment
+                        website below:</p>
+                    <ul class="list-inline">
+                        <li class="list-inline-item">
+                            <a href="https://m.me/" class="fa fa-facebook text-white"></a>
+                        </li>
+                        <li class="list-inline-item">
+                            <a href="https://wa.me/0137865492"  class="fa fa-whatsapp text-white"></a>
+                        </li>
+                        <li class="list-inline-item">
+                            <a href="https://instagram.com/purr_4meow?utm_source=qr&igshid=MzNlNGNkZWQ4Mg%3D%3D"  class="fa fa-instagram text-white"></a>
+                        </li>
+                        <li class="list-inline-item">
+                            <a href="mailto:meowpurrfectly@gmail.com" class="fa fa-google text-white"></a>
+                        </li>
+                    </ul>
+                    <p>We aim to accommodate your preferred date and time to the best of our
+                        ability.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            // Attach an event listener to the form submission
+            document.querySelector('form').addEventListener('submit', function(event) {
+                event.preventDefault();
+    
+                const serviceTypeMap = {
+                    "1": "Day Care",
+                    "2": "Boarding",
+                    "3": "Training",
+                    "4": "Grooming",
+                };
+                
+                // Get the values of form fields
+                const firstName = document.querySelector('input[placeholder="First name"]').value;
+                const phoneNumber = document.querySelector('input[placeholder="Phone number"]').value;
+                const departureDate = document.querySelector('input[placeholder="Departure Date"]').value;
+                const numberOfCats = document.querySelector('select').value;
+                const lastName = document.querySelector('input[placeholder="Last name"]').value;
+                const email = document.querySelector('input[placeholder="Email"]').value;
+                const arrivalDate = document.querySelector('input[placeholder="Arrival Date"]').value;
+                const serviceType = document.querySelector('select');
+                const selectedServiceTypeNumber = parseInt(serviceType.value);
+                const selectedServiceType = serviceTypeMap[selectedServiceTypeNumber];
+    
+                // Create an object to store the form data
+                const formData = {
+                    firstName,
+                    phoneNumber,
+                    departureDate,
+                    numberOfCats,
+                    lastName,
+                    email,
+                    arrivalDate,
+                    serviceType: selectedServiceType,
+                };
+    
+                // Check if there is existing stored form data
+                let storedFormData = sessionStorage.getItem('formData');
+                let formArray = [];
+                
+                if (storedFormData) {
+                    formArray = JSON.parse(storedFormData);
+                }
+    
+                // Append the current form data to the array
+                formArray.push(formData);
+    
+                // Store the updated form data array in session storage
+                sessionStorage.setItem('formData', JSON.stringify(formArray));
+    
+                // Reset the form
+                this.reset();
+            });
+    
+            // To retrieve and display all stored form data, you can use the following code:
+            const storedFormData = sessionStorage.getItem('formData');
+            if (storedFormData) {
+                const formArray = JSON.parse(storedFormData);
+    
+                // You can iterate through the formArray to display or process the stored form data.
+            }
+        });
+    </script>
+    
+    
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+</body>
+</html>

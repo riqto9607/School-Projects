@@ -1,0 +1,565 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    min-height: 100vh;
+    background: #ffffff;
+}
+
+header{
+    z-index: 999;
+    position: absolute;
+    width: 100%;
+    min-height: 66px;
+    padding: 0 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+}
+
+header .logo{
+    color: #fff;
+    font-size: 1.75em;
+    font-weight: 600;
+    text-decoration: none;
+    margin-left: 20px;
+}
+
+header ul{
+    position: relative;
+}
+
+header ul li{
+    position: relative;
+    list-style: none;
+    float: left;
+}
+
+header ul li a{
+    color: #fff;
+    font-size: 1.1em;
+    padding: 20px 25px;
+    text-decoration: none;
+    display: flex;
+    justify-content: space-between;
+}
+
+header ul li a:hover{
+    background: #91b1eb;
+}
+
+header ul li ul{
+    position: absolute;
+    left: 0;
+    width: 200px;
+    background: #7591be;
+    display: none;
+}
+
+header ul li:hover ul{
+    display: block;
+}
+
+header ul li ul li{
+    position: relative;
+    width: 100%;
+    border: 1px solid rgba(0,0,0,0.2);
+}
+
+.home{
+    position: relative;
+    max-width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.home video{
+    z-index: 000;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.home .content{
+    z-index: 888;
+    color: #fff;
+    width: 70%;
+    margin-top: 50px;
+    margin: 0 auto;
+}
+
+.home .content h1{
+    font-size: 4em;
+    font-weight: 900;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    line-height: 75px;
+    margin-bottom: 40px;
+}
+
+.home .content h1 span{
+    font-size: 1em;
+    font-weight: 600;
+}
+
+.home .content p{
+    margin-bottom: 40px;
+    font-size: 23px;
+}
+
+.home .content a{
+    background: #e4e8f0;
+    padding: 15px 35px;
+    color: #101d30;
+    font-size: 1.1em;
+    font-weight: 500;
+    text-decoration: none;
+    border-radius: 100px;
+}
+
+.video-slide{
+    filter: brightness(60%);
+}
+
+.background{
+    z-index: 999;
+    position: relative;
+    width: 100%;
+    height: 400px;
+    padding: 0 100px;
+    display: flex;
+    background: #132d55;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.background .container{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 100px 20px;
+}
+
+.background .container p{
+    position: absolute;
+    margin-bottom: 280px;
+    color: #fff;
+    font-family: 'Poppins';
+    font-size: 2.6em;
+    padding: 20px 25px;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.background .container .card{
+    position: relative;
+    display: flex;
+    margin-top: 100px;
+    width: 250px;
+    height: 250px;
+    justify-content: center;
+    align-items: flex-start;
+    background: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 35px 80px rgba(0,0,0,0.15);
+    transition: 0.5s;
+}
+
+.background .container .card:hover{
+    height: 350px;
+    width: 320px;
+}
+
+.background .container .card .imgBx{
+    position: absolute;
+    top: 10px;
+    width: 220px;
+    height: 180px;
+    background: #333;
+    border-radius: 12px;
+    transition: 0.5s;
+    overflow: hidden;
+}
+
+.background .container .card:hover .imgBx{
+    top: -70px;
+    scale: 0.85;
+    box-shadow: 0 15px 45px rgba(0,0,0,0.2);
+}
+
+.background .container .card .imgBx img{
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.background .container .card .contents{
+    position: absolute;
+    width: 100%;
+    top: 205px;
+    font-size: 15px;
+    padding: 0 5px;
+    text-align: center;
+    transition: 0.5s;
+    overflow: hidden;
+    height: 30px;
+}
+
+.background .container .card .contents p {
+    font-size: 13px;
+    color: #000;
+    text-align: center;
+    position: relative;
+    width: 100%;
+    line-height: 1.3;
+    margin: 0;
+}
+
+.background .container .card .contents a{
+    position: relative;
+    top: 3px;
+    display: inline-block;
+    padding: 5px 15px;
+    background: #8c95ea;
+    color: #000;
+    font-weight: 500;
+    text-decoration: none;
+    border-radius: 8px;
+}
+
+.background .container .card:hover .contents{
+    top: 110px;
+    height: 250px;
+}
+
+img{
+    width: 400px;
+    height: 600px;
+    float: left;
+}
+
+.text{
+    padding: 50px;
+}
+
+.text h2{
+    text-align: center;
+    font-size: 30px;
+    margin-bottom: 30px;
+    margin-right: 150px;
+}
+
+.text p{
+    text-align: justify;
+    font-weight: 200px;
+    font-size: 20px;
+    margin-right: 150px;
+    margin-left: 400px;
+}
+
+.text img{
+    width: 200px;
+    height: 200px;
+    margin-left: 700px;
+}
+
+.text a{
+    color: #000;
+    background: #4ea2cf;
+    align-items: flex-start;
+    flex-direction: row;
+    width: 100%;
+    height: 20%;
+    justify-content: center;
+    text-align: center;
+    margin-top: 500px;
+}
+
+.joins{
+    width: 100%;
+    height: 50px; 
+}
+
+.joins .join{
+    position: absolute;
+    width: 100%;
+    height: 35%;
+    flex-direction: column;
+    background: #132d55;
+    color: #fff;
+    margin-top: 200px;
+    justify-content: center;
+    text-align: center;
+    font-size: 30px;
+}
+
+.joins .join h1{
+    font-size: 50px;
+    margin-top: 50px;
+}
+
+.joins .join p{
+    font-size: 30px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.joins .join a{
+    font-size: 20px;
+    font-weight: 200px;
+    padding: 10px 30px;
+    color: #000;
+    background: #fff;
+    border-radius: 20px;
+    text-decoration: none;
+}
+
+.joins .join a:hover{
+    background: #bbabea;
+}
+
+
+@media(max-width: 576px)
+{
+
+    header{
+        padding: 10px 20px;
+    }
+
+    header nav{
+        position: absolute;
+        width: 100%;
+        top: 66px;
+        left: 0;
+        background-color: #4ea2cf;
+        display: none;
+    }
+
+    header.active nav{
+        display: initial;
+    }
+
+    header nav ul li{
+        width: 100%;
+    }
+
+    header nav ul li ul{
+        position: relative;
+        width: 100%;
+        left: 0;
+    }
+
+    header ul li:hover ul li{
+        background: #2f599d;
+    } 
+
+    body{
+        position: relative;
+    }
+
+    .home .content h1 {
+        font-size: 3.5em;
+        font-weight: 900;
+        text-transform: uppercase;
+        letter-spacing: 5px;
+        line-height: 75px;
+        margin-bottom: 40px;
+    }
+
+    .menuToggle{
+        position: relative;
+        width: 40px;
+        height: 50px;
+        cursor: pointer;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .menuToggle::before{
+        content: '';
+        position: absolute;
+        width: 100%;
+        height: 3px;
+        background: #fff;
+        transform: translateY(-12px);
+        box-shadow: 0 12px #fff;
+    }
+
+    .menuToggle::after{
+        content: '';
+        position: absolute;
+        width: 100%;
+        height: 3px;
+        background: #fff;
+        transform: translateY(-12px);
+    }
+
+    header.active .menuToggle::before{
+        transform: rotate(45deg);
+        box-shadow: 0 0 #fff;
+    }
+
+    header.active .menuToggle::after{
+        transform: rotate(-45deg);
+    }
+
+    .home .content {
+        z-index: 888;
+        color: #fff;
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    .background{
+        height: auto;
+    }
+
+    .background .container {
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap; 
+        row-gap: 0;
+      }
+
+    .background .container p {
+        position: absolute;
+        margin-bottom: 380px;
+        color: #fff;
+        font-family: 'Poppins';
+        font-size: 1.8em;
+        font-weight: 500;
+    }
+
+    .background .container .card {
+        position: relative;
+        width: 110px;
+        margin-bottom: 30px;
+        margin-left: 10px;
+        height: 120px;
+        background: #ffffff;
+    }
+
+    .background .container .card:hover{
+        height: 350px;
+        width: 200px;
+    }
+
+    .background .container .card .imgBx {
+        position: absolute;
+        top: 10px;
+        width: 90px;
+        height: 80px;
+        background: #333;
+        border-radius: 12px;
+        transition: 0.5s;
+        overflow: hidden;
+    }
+
+    .background .container .card:hover .imgBx{
+        top: -40px;
+        scale: 1.5;
+        box-shadow: 0 15px 45px rgba(0,0,0,0.2);
+    }
+
+    .background .container .card .contents {
+        position: absolute;
+        width: 100%;
+        top: 95px;
+        font-size: 10px;
+        padding: 0 5px;
+        text-align: center;
+        transition: 0.5s;
+        overflow: hidden;
+        height: 30px;
+    }
+
+    .background .container .card:hover .contents {
+        top: 70px;
+        height: 380px;
+    }
+
+    .background .container .card .contents a {
+        top: 3px;
+        font-size: 13px;
+        padding: 5px 15px;
+        background: #8c95ea;
+        color: #000;
+        font-weight: 500;
+        text-decoration: none;
+        border-radius: 8px;
+    }
+
+    .background .container .card .contents a:hover{
+        background: #be99df;
+    }
+
+    .text{
+        padding: 0px;
+    }
+
+    .box img {
+        display: none;
+    }
+
+    .box .text h2 {
+        font-size: 30px;
+        max-width: 100%;
+        margin: 50px;
+    }
+
+    .text p {
+        font-weight: 200px;
+        font-size: 18px;
+        margin-top: 5px;
+        margin-right: 30px;
+        margin-left: 30px;
+        margin-bottom: 40px;
+    }
+    .joins .join {
+        position: absolute;
+        justify-content: center;
+        text-align: center;
+        font-size: 30px;
+        height: 210px;
+        margin: 0;
+    }
+
+    .joins .join h1 {
+        font-size: 30px;
+        margin-top: 20px;
+    }
+
+    .joins .join p {
+        font-size: 20px;
+        margin-top: 10px;
+    }
+
+    .joins .join a {
+        font-size: 18px;
+        padding: 8px 20px;
+        color: #000;
+        background: #fff;
+        border-radius: 20px;
+        text-decoration: none;
+    }
+
+
+}

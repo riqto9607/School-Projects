@@ -1,0 +1,484 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@900&family=Shantell+Sans:wght@300;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;500;900&family=Shantell+Sans:wght@300;600&display=swap');
+/* Body background color */
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #0D1B2B; /* Change to sky blue */
+}
+
+/* Navbar styles */
+.navbar {
+    background-color: #0D1B2B; 
+}
+  
+.navbar-brand {
+    font-weight: bold;
+    color: #fff; /* White text color */
+    font-size: 24px;
+}
+  
+.navbar-toggler-icon {
+    background-color: #fff; /* White background color for the toggle icon */
+}
+  
+.nav-link {
+    color: #fff; /* White text color for menu items */
+}
+
+
+/* Dropdown menu styles */
+.dropdown-menu {
+    background-color: #238ad9; /* Dark blue background color for the dropdown */
+}
+  
+.dropdown-item {
+    color: #fff; /* White text color for dropdown items */
+}
+  
+.dropdown-item:hover {
+    background-color: #333; /* Darker background color on hover */
+}
+
+.theme-text {
+    color: #238ad9;
+}
+
+.card-img-top {
+    height: 30%;
+    width: 30%;
+}
+
+.card {
+    z-index: 1;
+    overflow: hidden;
+    transition: 0.5s;
+}
+
+.card:hover {
+    color: white;
+}
+
+.card::before {
+    content: "";
+    position: absolute;
+    left: -100%;
+    top: 0%;
+    background: #5432a8;
+    width: 100%;
+    height: 100%;
+    transition: 0.5s;
+    z-index: -1;
+}
+
+.card:hover::before {
+    left: 0%;
+    color: white;
+}
+
+.container-fluid {
+    background-position: center;
+    background-size: cover;
+}
+
+section {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 400px;
+    padding-top: 100px;
+    background: #238ad9;
+}
+
+.curve {
+    position: absolute;
+    height: 250px;
+    width: 100%;
+    bottom: 0;
+    text-align: center;
+}
+
+.curve::before {
+    content: '';
+    display: block;
+    position: absolute;
+    border-radius: 100% 50%;
+    width: 55%;
+    height: 100%;
+    transform: translate(85%, 60%);
+    background-color: hsl(216, 21%, 16%);
+}
+
+.curve::after {
+    content: '';
+    display: block;
+    position: absolute;
+    border-radius: 100% 50%;
+    width: 55%;
+    height: 100%;
+    background-color: #238ad9;
+    transform: translate(-4%, 40%);
+    z-index: -1;
+}
+
+#hover-trigger {
+    cursor: pointer;
+    color: blue;
+    text-decoration: underline;
+}
+
+.footer {
+  background: #0a2a3f;
+  padding: 5px 10px;
+  text-align: center;
+  position: relative;
+}
+
+.footer .row{
+  margin-top: 20px;
+}
+
+/* Slider styles */
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+.page-content {
+  background-color: #0D1B2B;
+  overflow: hidden;
+  font-family: 'Roboto', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  margin-top: -10%;
+  padding-bottom: 6%;
+  padding-left: 15%;
+  position: relative;
+}
+.flex {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+
+.slider-wrapper div {
+  position: relative;
+}
+
+.slider-wrapper {
+  margin-top: 15vw;
+  margin-left: 11vw;
+}
+/* Media query for smaller screens */
+@media (max-width: 500px) {
+  .slider-wrapper {
+    margin-top: 5vw;
+    margin-left: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+  }
+  .slide {
+    width: 100%;
+    margin-bottom: 5vw; /* Adjust the spacing between slides as needed */
+  }
+
+  .slide-image {
+    height: auto;
+  }
+
+  .slide-image img {
+    width: 100%; /* Make the images span the full width of the container */
+    cursor: pointer;
+  }
+
+  .slide-content {
+    width: 100%;
+    color: #fff;
+    padding: 10px 20px;
+  }
+
+  .slide-title {
+    font-size: 10px;
+    font-weight: 400;
+    line-height: 6.0vw ;
+    padding-bottom: 2.0vw;
+  }
+
+  .slide-text {
+    font-size: 16px;
+    line-height: 7.0vw;
+    opacity: 0.8;
+    padding-bottom: 2vw;
+    text-align: left; /* Center-align the text */
+  }
+
+  .slide-more {
+    font-weight: 400;
+    float: left;
+    font-size: 0.9vw;
+  }
+
+  .slide-bullet {
+    width: 0.5vw;
+    height: 0.5vw;
+    background-color: #0b8bcc;
+    border-radius: 50%;
+    position: relative;
+    margin-left: 1.2vw;
+  }
+}
+.slide-image {
+  height: 24vw;
+}
+
+.slide-image img {
+  width: 24vw;
+  cursor: pointer;
+}
+
+.slide-content {
+  width: 25vw;
+  color: #fff;
+  padding: 10px 20px;
+}
+
+.slide-title {
+  font-size: 25px;
+  font-weight: 400;
+  line-height: 3.7vw;
+  padding-bottom: 1.2vw;
+}
+
+.slide-text {
+  font-size: 16px;
+  line-height: 2.5vw;
+  opacity: 0.8;
+  padding-bottom: 2vw;
+}
+
+.slide-more {
+  font-weight: 400;
+  float: left;
+  font-size: 0.9vw;
+}
+
+.slide-bullet {
+  width: 0.5vw;
+  height: 0.5vw;
+  background-color: #0b8bcc;
+  border-radius: 50%;
+  position: relative;
+  margin-left: 1.2vw;
+}
+
+.slide-nav {
+  margin-left: 64vw;
+  margin-top: -5.5vw;
+}
+
+div.overlay-blue {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  transition: 0.5s ease all;
+}
+
+div.overlay-blue:hover {
+  background-color: rgba(13, 27, 43, 0.5);
+}
+
+.arrows {
+  width: 3.5vw;
+  margin-top: -5.8vw;
+  margin-left: 60vw;
+  position: relative;
+  padding-top: 15%;
+}
+
+.arrow {
+  display: inline-block;
+  position: absolute;
+  width: 1.2vw;
+  height: 1.2vw;
+  background: transparent;
+  text-indent: -9999px;
+  border-top: 0.15vw solid #fff;
+  border-left: 0.15vw solid #fff;
+  transition: all .1s ease-in-out;
+  text-decoration: none;
+  color: transparent;
+}
+
+.arrow:hover {
+  border-color: #0A8ACB;
+  border-width: 0.25vw;
+}
+
+.arrow:before {
+  display: block;
+  height: 200%;
+  width: 200%;
+  margin-left: -50%;
+  margin-top: -50%;
+  content: "";
+  transform: rotate(45deg);
+}
+
+.arrow.prev {
+  transform: rotate(-45deg);
+  left: 0;
+}
+
+.arrow.next {
+  transform: rotate(135deg);
+  right: 0;
+}
+/* Style for the video container */
+.video-container {
+  position: relative;
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+}
+.video {
+  width: 100%; /* 100% width within the container */
+  height: auto; /* Maintain the video's aspect ratio */
+  display: flex;
+  position: relative; /* Position the video absolutely within the container */
+  top: 50%; /* Vertically center the video */
+  left: 50%; /* Horizontally center the video */
+  transform: translate(-50%, -13.4%); /* Center the video precisely */
+}
+/* Style for the text overlay */
+.text-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: rgba(0, 0, 0, 0.5); /* Semi-transparent black background */
+  color: white;
+  padding: 20px;
+  box-sizing: border-box;
+  margin-top: 63px;
+  text-align: center; /* Center-align the text */
+}
+
+/*API css*/
+.containerAPI {
+  margin: 30px auto;
+  max-width: 400px; /* Adjust this value to change the input container width */
+  color: white;
+  font-weight: bold;
+  position: relative;
+  text-align: center; /* Center the text content within the container */
+  display: flex; /* Use flexbox to align items horizontally */
+  flex-direction: column; /* Stack items vertically */
+  align-items: center; /* Center items horizontally */
+}
+
+/* Make the input longer */
+input[type="text"] {
+  width: 100%;
+  padding: 19px;
+  margin-bottom: 10px;
+  height: 50px; /* Set the height to match the button */
+}
+
+/* Make the button shorter and match the height to the input */
+button {
+  margin-left: 5px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  cursor: pointer;
+  padding: 5px 20px; /* Adjust the padding to make the button shorter */
+  height: 40px; /* Set the height to match the input */
+  white-space: nowrap; /* Prevent text wrapping */
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+#catInfo {
+  text-align: center;
+}
+
+/* Style the input and button container */
+.input-container {
+  display: flex;
+  flex-direction: row; /* Align items horizontally */
+  justify-content: center; /* Center items horizontally */
+  align-items: center; /* Center items vertically */
+  margin-bottom: 20px; /* Adjust the margin as needed */
+}
+
+@media screen and (max-width: 768px) {
+  .text-overlay {
+    top: 0;
+    left: 0;
+    height: 100%;
+    position: relative;
+    transform: translate(0%, -10%);
+  }
+}
+/* Media query for screens smaller than 768px (adjust as needed) */
+@media screen and (max-width: 768px) {
+  .text-overlay {
+    margin-top: 0; /* Remove margin from the top */
+    font-size: 10px; /* Adjust font size for smaller screens */
+  }
+}
+/* Style for the container */
+.container5 {
+  position: relative;
+  text-align: center;
+  font-size: 20px;
+  ;
+}
+
+/* Style for the image */
+.image {
+  max-width: 100%; /* Ensure the image doesn't exceed its container */
+}
+
+/* Style for the text */
+.text {
+  position: absolute;
+  top: 50%; /* Center the text vertically */
+  left: 50%; /* Center the text horizontally */
+  transform: translate(-50%, -50%); /* Center the text both horizontally and vertically */
+  background-color: rgba(0, 0, 0, 0); /* Semi-transparent background color for readability */
+  color: white; /* Text color */
+  padding: 10px; /* Add padding for better readability */
+  border-radius: 5px; /* Rounded corners */
+}
+
+/* Style for the reservation button */
+.reservation-button {
+  position: relative;
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: red; /* Choose your desired background color */
+  color: white; /* Text color */
+  font-size: 16px;
+  text-decoration: none;
+  border-radius: 5px; /* Rounded corners */
+  transition: background-color 0.3s ease;
+}
+
+.reservation-button:hover {
+  background-color: darkred; /* Change color on hover */
+  color: white; /* Text color */
+}
+
+/* Media query for smaller screens */
+@media (max-width: 768px) {
+  .reservation-button {
+    padding: 8px 16px; /* Adjust padding for smaller screens */
+    font-size: 14px; /* Adjust font size for smaller screens */
+  }
+}

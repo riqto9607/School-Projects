@@ -1,0 +1,484 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif; 
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: url('images/White-Cat-Background.jpg') no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 100px; 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 99;
+    background: transparent;
+}
+
+header .logo{
+    color: #fff;
+    font-size: 1.75em;
+    font-weight: 600;
+    text-decoration: none;
+    margin-left: 20px;
+}
+
+header ul{
+    position: relative;
+}
+
+header ul li{
+    position: relative;
+    list-style: none;
+    float: left;
+}
+
+header ul li a{
+    color: #fff;
+    font-size: 1.2em;
+    padding: 20px 25px;
+    text-decoration: none;
+    display: flex;
+    justify-content: space-between;
+}
+
+header ul li a:hover{
+    background: #aec0de;
+}
+
+header ul li ul{
+    position: absolute;
+    left: 0;
+    width: 200px;
+    background: #7591be;
+    display: none;
+}
+
+header ul li:hover ul{
+    display: block;
+}
+
+header ul li ul li{
+    position: relative;
+    width: 100%;
+    border: 1px solid rgba(0,0,0,0.2);
+}
+
+
+.navigation .btnlogin-popup {
+    color: #fff;
+    width: 130px;
+    height: 50px;
+    background: transparent;
+    border: 2px solid rgba(255, 255, 255, 0.5);
+    outline: none;
+    font-size: 1.1em;
+    font-weight: 500;
+    margin: 10px;
+    margin-left: 20px; /* Adjust margin */
+    border-radius: 6px;
+    transition: 0.5s;
+}
+
+.navigation .btnlogin-popup:hover {
+    background: #bcd0ee;
+}
+
+.wrapper {
+    position: relative;
+    width: 400px;
+    height: 440px;
+    background: transparent;
+    border: 2px solid rgba(255, 255, 255, 0.5);
+    border-radius: 20px;
+    backdrop-filter: blur(15px);
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: scale(0);
+    transition: transform 0.5s ease, height 0.2s ease;
+    overflow: hidden;
+}
+
+.wrapper.active-popup {
+    transform: scale(1);
+}
+
+.wrapper.active {
+    height: 520px;
+}
+
+.wrapper .form-box {
+    width: 100%;
+    padding: 40px;
+}
+
+.wrapper .form-box.login {
+    transition: transform 0.18s ease;
+    transform: translateX(0);
+}
+
+.wrapper.active .form-box.login {
+    transition: none;
+    transform: translateX(-400px);
+}
+
+.wrapper .form-box.register {
+    position: absolute;
+    transition: none;
+    transform: translateX(400px);
+}
+
+.wrapper.active .form-box.register {
+    transition: transform 0.18s ease;
+    transform: translateX(0);
+}
+
+.wrapper .icon-close {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 45px;
+    height: 45px;
+    color: #fff;
+    font-size: 2em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom-left-radius: 20px;
+    z-index: 1;
+}
+
+.form-box h2 {
+    font-size: 2em;
+    color: #fff;
+    text-align: center;
+}
+
+.input-box {
+    position: relative;
+    height: 50px;
+    width: 100%;
+    border-bottom: 2px solid #fff;
+    margin: 20px 0;
+}
+
+.input-box label {
+    position: absolute;
+    top: 50%;
+    left: 5px;
+    transform: translateY(-50%);
+    color: #fff;
+    font-weight: 500;
+    font-size: 1em;
+    pointer-events: none;
+    transition: 0.5s;
+}
+
+.input-box input:focus+label,
+.input-box input:valid+label,
+.input-box input:not(:placeholder-shown)+label {
+    top: -5px;
+    font-size: 0.8em;
+}
+
+
+
+.input-box input {
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    border: none;
+    outline: none;
+    font-size: 1em;
+    color: #fff;
+    font-weight: 600;
+    padding: 0 35px 0 5px;
+}
+
+.input-box .icon {
+    position: absolute;
+    right: 8px;
+    color: #fff;
+    font-size: 1.2em;
+    line-height: 57px;
+    top: 5px;
+}
+
+.remember-forgot {
+    margin: -15px 0 15px;
+    font-size: 0.9em;
+    font-weight: 600;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+}
+
+.remember-forgot label input {
+    accent-color: #fff;
+    margin-right: 3px;
+}
+
+.remember-forgot a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.remember-forgot a:hover {
+    text-decoration: underline;
+}
+
+.forgot-password {
+    font-size: 0.9em;
+    color: #fff;
+    margin-top: 10px;
+}
+
+.forgot-password a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: 600;
+}
+
+.forgot-password a:hover {
+    text-decoration: underline;
+}
+
+.btn {
+    width: 100%;
+    height: 45px;
+    border-radius: 6px;
+    background: #fff;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-size: 1em;
+    font-weight: 600;
+}
+
+.login-register {
+    font-size: 0.9em;
+    color: #fff;
+    text-align: center;
+    font-weight: 500;
+    margin: 20px 0 10px;
+}
+
+.login-register p a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: 600;
+}
+
+.login-register p a:hover {
+    text-decoration: underline;
+}
+
+
+.dialog-overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 9999;
+    justify-content: center;
+    align-items: center;
+}
+
+.dialog-box {
+    position: absolute;
+    background: #fff;
+    padding: 100px;
+    margin-top: -10px;
+    border-radius: 20px;
+    text-align: center;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(15px);
+}
+
+.button-container {
+    text-align: center;
+    position: absolute;
+    bottom: 10px;
+    left: 0;
+    right: 0;
+}
+
+
+#openDialog {
+    color: #000;
+    background-color: transparent;
+    border: none;
+    padding: 10px 10px;
+    border-radius: 3px;
+    font-size: 12px;
+    cursor: pointer;
+}
+
+#openDialog:hover {
+    background-color: #fff;
+}
+
+#closeDialog {
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+#closeDialog:hover {
+    background-color: #0056b3;
+}
+
+.btn {
+    padding: 10px 60px;
+    background: white;
+    border: 0;
+    outline: none;
+    font-size: 22px;
+    cursor: pointer;
+    font-weight: 500;
+    border-radius: 30px;
+}
+
+.popup {
+    width: 400px;
+    background: white;
+    border-radius: 6px;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0.1);
+    text-align: center;
+    padding: 0 30px 30px;
+    color: #333;
+    visibility: hidden;
+    transition: transform 0.4s, top 0.4s;
+    z-index: 2;
+}
+
+.open-popup {
+    visibility: visible;
+    top: 50%;
+    transform: translate(-50%, -50%) scale(1);
+}
+
+.popup img {
+    width: 100px;
+    margin-top: -50px;
+    border-radius: 50%;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 2);
+}
+
+.popup h2 {
+    font-size: 38px;
+    font-weight: 500;
+    margin: 30px 0 10px;
+}
+
+.popup button {
+    width: 100%;
+    margin-top: 50px;
+    padding: 10px 0;
+    background: #0cd484;
+    color: white;
+    border: 0;
+    outline: none;
+    font-size: 18px;
+    border-radius: 4px;
+    cursor: pointer;
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 2);
+}
+
+@media screen and (max-width:576px) {
+    header {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        padding: 0;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background: transparent;
+    }
+
+    header .logo {
+        color: #fff;
+        font-size: 1.5em;
+        font-weight: 600;
+        text-decoration: none;
+        margin-left: 20px;
+        margin-right: 50px;
+    }
+
+    header ul li a {
+        color: #fff;
+        font-size: 1em;
+        padding: 10px 20px;
+        text-decoration: none;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    header ul li ul {
+        position: absolute;
+        left: 0;
+        width: 150px;
+        background: #7696ca;
+        display: none;
+        z-index: 999;
+    }
+
+    .navigation .btnlogin-popup {
+        color: #fff;
+        width: 70px;
+        height: 35px;
+        background: transparent;
+        border: 2px solid rgba(255, 255, 255, 0.5);
+        font-size: 1em;
+        border-radius: 6px;
+    }
+
+    .wrapper {
+        backdrop-filter: blur(15px);
+    }
+
+    .wrapper.active-popup {
+        transform: scale(0.9);
+    }
+
+    .btn {
+        color: #333;
+    }
+
+    .remember-forgot {
+        margin: -15px 0 15px;
+        font-size: 0.9em;
+        font-weight: 600;
+        color: #fff;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .remember-forgot label input {
+        accent-color: #333;
+        margin-right: 3px;
+    }
+}

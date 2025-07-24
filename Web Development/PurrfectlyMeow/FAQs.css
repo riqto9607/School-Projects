@@ -1,0 +1,625 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+    background: #ffffff;
+}
+
+header {
+    z-index: 999;
+    position: absolute;
+    width: 100%;
+    min-height: 66px;
+    padding: 0 100px;
+    display: flex;
+    background: #7591be;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+}
+
+header .logo {
+    color: #fff;
+    font-size: 1.75em;
+    font-weight: 600;
+    text-decoration: none;
+    margin-left: 20px;
+}
+
+header ul {
+    position: relative;
+}
+
+header ul li {
+    position: relative;
+    list-style: none;
+    float: left;
+}
+
+header ul li a {
+    color: #fff;
+    font-size: 1.1em;
+    padding: 20px 25px;
+    text-decoration: none;
+    display: flex;
+    justify-content: space-between;
+}
+
+header ul li a:hover {
+    background: #91b1eb;
+}
+
+header ul li ul {
+    position: absolute;
+    left: 0;
+    width: 200px;
+    background: #7591be;
+    display: none;
+}
+
+header ul li:hover ul {
+    display: block;
+}
+
+header ul li ul li {
+    z-index: 999;
+    position: relative;
+    width: 100%;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+.faq {
+    position: relative;
+    padding: 20px 20px;
+    background: #ffffff;
+    justify-content: space-between;
+    align-items: left;
+    top: 50px;
+    flex-direction: column;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.faq h3 {
+    font-size: 30px;
+    color: #7abff0;
+    margin-top: 15px;
+}
+
+.faq h2 {
+    font-size: 40px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+.faq p {
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.faq a {
+    color: #4977c8;
+    border-radius: 5px;
+    padding: 5px 20px;
+    text-align: left;
+    display: block;
+    font-size: 20px;
+    margin: 10px 10px;
+    text-decoration: none;
+}
+
+.faq img {
+    position: absolute;
+    left: 1000px;
+    bottom: 50px;
+    float: right;
+    height: 400px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+}
+
+
+.general a {
+    color: #636465;
+    text-decoration: none;
+    margin-top: 18px;
+    font-size: 15px;
+    margin-right: 20px;
+    margin-left: 10px;
+    vertical-align: middle;
+    /* Vertically align it with h1 */
+    float: right;
+}
+
+.general h1 {
+    display: inline-block;
+}
+
+.answer {
+    margin-top: 50px;
+}
+
+.answer .general {
+    background-color: #dee2e8;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.answer .general h1 {
+    font-size: 40px;
+    color: #333;
+    margin-bottom: 10px;
+    padding: 10px;
+}
+
+.answer .general h2 {
+    border: 1px slid #ccc;
+    padding: 10px;
+    cursor: pointer;
+    position: relative;
+    font-size: 25px;
+    color: #555;
+    margin-bottom: 10px;
+}
+
+.answer .general h2 .click-sign {
+    color: #195faa;
+    font-weight: bold;
+    font-size: 14px;
+    position: relative;
+    right: auto;
+    top: 0;
+    vertical-align: middle;
+    margin-left: 5px;
+    transform: 0.3s;
+}
+
+.answer .general h2.collapsed .click-sign {
+    transform: rotate(0deg);
+}
+
+.answer .general summary {
+    display: none;
+    border: 1px solid #ccc;
+    padding: 10px;
+    font-size: 20px;
+    background: #f6f8fa;
+    color: #59595b;
+    padding: 20px 20px;
+}
+
+.daycare {
+    background: #c7d3e6;
+    padding: 20px;
+}
+
+.daycare h1 {
+    font-size: 40px;
+    color: #333;
+    margin-left: 10px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    padding: 10px;
+    display: inline-block;
+}
+
+.daycare a {
+    color: #242424;
+    text-decoration: none;
+    font-size: 15px;
+    margin-top: 50px;
+    margin-right: 20px;
+    vertical-align: middle;
+    float: right;
+}
+
+.daycare h2 {
+    margin-left: 10px;
+    padding: 10px;
+    cursor: pointer;
+    position: relative;
+    font-size: 25px;
+    color: #555;
+    margin-bottom: 10px;
+}
+
+.daycare h2 .click-sign {
+    color: #195faa;
+    font-weight: bold;
+    font-size: 14px;
+    margin-left: 5px;
+    transform: 0.3s;
+}
+
+.daycare h2.collapsed .click-sign {
+    transform: rotate(0deg);
+}
+
+.daycare summary {
+    margin-left: 10px;
+    margin-right: 10px;
+    display: none;
+    border: 1px solid #ccc;
+    padding: 10px;
+    font-size: 20px;
+    background: #f6f8fa;
+    color: #59595b;
+    padding: 20px 20px;
+}
+
+.daycare summary p {
+    margin-bottom: 10px;
+}
+
+.boarding {
+    background: #dee2e8;
+    padding: 20px;
+}
+
+.boarding h1 {
+    font-size: 40px;
+    color: #333;
+    margin-left: 10px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    padding: 10px;
+    display: inline-block;
+}
+
+.boarding a {
+    color: #242424;
+    text-decoration: none;
+    font-size: 15px;
+    margin-top: 50px;
+    margin-right: 20px;
+    vertical-align: middle;
+    float: right;
+}
+
+.boarding h2.toggleSummary {
+    margin-left: 10px;
+    padding: 10px;
+    cursor: pointer;
+    position: relative;
+    font-size: 25px;
+    color: #555;
+    margin-bottom: 10px;
+}
+
+.boarding h2.toggleSummary .click-sign {
+    color: #195faa;
+    font-weight: bold;
+    font-size: 14px;
+    margin-left: 5px;
+    transform: 0.3s;
+}
+
+.boarding h2.toggleSummary.collapsed .click-sign {
+    transform: rotate(0deg);
+}
+
+.boarding summary {
+    margin-left: 10px;
+    margin-right: 10px;
+    display: none;
+    border: 1px solid #ccc;
+    padding: 10px;
+    font-size: 20px;
+    background: #f6f8fa;
+    color: #59595b;
+}
+
+.boarding summary p {
+    margin-bottom: 10px;
+    padding: 20px 20px;
+}
+
+.training {
+    background: #c7d3e6;
+}
+
+.training h1 {
+    font-size: 40px;
+    color: #333;
+    margin-left: 25px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    padding: 10px;
+    display: inline-block;
+}
+
+.training a {
+    color: #242424;
+    text-decoration: none;
+    font-size: 15px;
+    margin-top: 50px;
+    margin-right: 40px;
+    vertical-align: middle;
+    float: right;
+}
+
+.training h2 {
+    margin-left: 25px;
+    padding: 10px;
+    cursor: pointer;
+    position: relative;
+    font-size: 25px;
+    color: #555;
+    margin-bottom: 10px;
+}
+
+.training h2 .click-sign {
+    color: #195faa;
+    font-weight: bold;
+    font-size: 14px;
+    margin-left: 10px;
+    transform: 0.3s;
+}
+
+.training h2.collapsed .click-sign {
+    transform: rotate(0deg);
+}
+
+.training summary {
+    margin-left: 25px;
+    margin-right: 10px;
+    display: none;
+    border: 1px solid #ccc;
+    padding: 10px;
+    font-size: 20px;
+    background: #f6f8fa;
+    color: #59595b;
+}
+
+.training summary p {
+    margin-bottom: 10px;
+    padding: 20px 20px;
+}
+
+
+.grooming {
+    background: #dee2e8;
+    padding: 20px;
+}
+
+.grooming h1 {
+    font-size: 40px;
+    color: #333;
+    margin-left: 10px;
+    /* Adjust the margin-left property as needed */
+    margin-top: 20px;
+    margin-bottom: 10px;
+    padding: 10px;
+    display: inline-block;
+}
+
+.grooming a {
+    color: #242424;
+    text-decoration: none;
+    font-size: 15px;
+    margin-top: 50px;
+    margin-right: 20px;
+    vertical-align: middle;
+    float: right;
+}
+
+.grooming h2 {
+    margin-left: 10px;
+    padding: 10px;
+    cursor: pointer;
+    position: relative;
+    font-size: 25px;
+    color: #555;
+    margin-bottom: 10px;
+}
+
+.grooming h2 .click-sign {
+    color: #195faa;
+    font-weight: bold;
+    font-size: 14px;
+    margin-left: 5px;
+    transform: 0.3s;
+}
+
+.grooming h2.collapsed .click-sign {
+    transform: rotate(0deg);
+}
+
+.grooming summary {
+    margin-left: 10px;
+    margin-right: 10px;
+    display: none;
+    border: 1px solid #ccc;
+    padding: 10px;
+    font-size: 20px;
+    background: #f6f8fa;
+    color: #59595b;
+}
+
+.grooming summary p {
+    margin-bottom: 10px;
+    padding: 20px 20px;
+}
+
+footer {
+    background-color: rgb(55, 82, 189);
+    text-align: center;
+    padding: 10px 0;
+}
+
+footer nav ul {
+    list-style: none;
+    display: flex;
+    padding: 20px;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-left: 30px;
+    margin-right: 30px;
+}
+
+footer nav li {
+    margin: 0 20px;
+}
+
+footer nav a {
+    text-decoration: none;
+    color: white;
+    transition: color 0.3s;
+    font-size: 25px;
+}
+
+footer nav a:hover {
+    color: rgb(113, 200, 234);
+}
+
+.joins .join {
+    position: absolute;
+    width: 100%;
+    height: 250px;
+    flex-direction: column;
+    background: #132d55;
+    color: #fff;
+    justify-content: center;
+    text-align: center;
+    font-size: 30px;
+}
+
+.joins .join h1 {
+    font-size: 50px;
+    margin-top: 20px;
+    flex-wrap: wrap;
+}
+
+.joins .join p {
+    font-size: 30px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.joins .join a {
+    font-size: 20px;
+    font-weight: 200px;
+    padding: 10px 30px;
+    color: #000;
+    background: #fff;
+    border-radius: 20px;
+    text-decoration: none;
+}
+
+.joins .join a:hover {
+    background: #bbabea;
+}
+
+@media (max-width: 576px) {
+
+    .faq h3 {
+        margin-top: 50px;
+    }
+
+    header ul li a {
+        color: #fff;
+        margin-left: 15px;
+        font-size: 12px;
+        padding: 10px 10px;
+        text-decoration: none;
+        display: flex;
+    }
+
+    header ul li {
+        position: relative;
+        list-style: none;
+        float: left;
+    }
+
+    header ul li ul {
+        position: absolute;
+        left: 0;
+        width: 200px;
+        background: #a7bde1;
+        display: none;
+        z-index: 999;
+    }
+
+    .faq {
+        position: relative;
+        padding: 50px 20px;
+        background: #ffffff;
+        align-items: left;
+        top: 50px;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+    .faq img {
+        display: none;
+    }
+
+    footer {
+        background-color: rgb(55, 82, 189);
+        text-align: center;
+        padding: 0;
+    }
+
+    footer nav li {
+        margin: 0 10px;
+    }
+
+    footer nav ul {
+        list-style: none;
+        display: flex;
+        padding: 10px;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+    footer nav a {
+        font-size: 20px;
+    }
+
+    .joins .join {
+        width: 100%;
+        height: 210px;
+        flex-direction: column;
+        background: #132d55;
+        color: #fff;
+        justify-content: center;
+    }
+
+    .joins .join h1 {
+        font-size: 30px;
+        margin-top: 30px;
+        flex-wrap: wrap;
+    }
+
+    .joins .join p {
+        font-size: 20px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+    .joins .join a {
+        font-size: 20px;
+        font-weight: 200px;
+        padding: 8px 15px;
+        color: #000;
+        background: #fff;
+        border-radius: 20px;
+        text-decoration: none;
+    }
+
+
+
+}

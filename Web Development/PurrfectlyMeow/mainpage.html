@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Purrfectly Meow</title>
+    <link rel="icon" href="images/icon.png" type="image/x-icon">
+    <link rel="stylesheet" type="text/css" href="mainpage.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+</head>
+
+<body>
+    <header>
+        <a href="mainpage.html" class="logo">Purrfectly Meow</a>
+        <div class="menuToggle"></div>
+        <nav>
+            <ul>
+                <li><a href="mainpage.html">Home</a></li>
+                <li><a href="service.html">Services</a>
+                    <ul>
+                        <li><a href="daycare.html">Day Care</a></li>
+                        <li><a href="boarding.html">Boarding</a></li>
+                        <li><a href="grooming.html">Grooming</a></li>
+                        <li><a href="training.html">Training</a></li>
+                    </ul>
+                </li>
+                <li><a href="givingback.html">Giving Back</a></li>
+                <li><a href="donation.html">Donation</a></li>
+                <li><a href="aboutus.html">About Us</a>
+                    <ul>
+                        <li><a href="aboutus.html">History</a></li>
+                        <li><a href="FAQs.html">FAQs</a></li>
+                        <li><a href="aboutus.html">Contact Us</a></li>
+                    </ul>
+                </li>
+                <li><a href="login.html">Account Login</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="home">
+        <video class="video-slide active"
+            src="https://purvideo.blob.core.windows.net/purfectlyvideo/grooming1.mp4?sp=r&st=2023-10-20T06:41:09Z&se=2024-06-01T14:41:09Z&spr=https&sv=2022-11-02&sr=b&sig=FEDWIYgdbX5S1wXYqWIlTDuRm5J07i3TSFqAy8HShHE%3D"
+            autoplay muted loop>Your browser does not support the video tag.</video>
+        <div class="content">
+            <h1>Pawsitive.<br><span>Cat Connections</span></h1>
+            <p>Bringing Cats and Owners Closer Together.</p>
+            <a href="service.html">Read More</a>
+        </div>
+    </section>
+
+    <div class="background">
+        <div class="container">
+            <p>I'm Looking For</p>
+            <div class="card">
+                <div class="imgBx">
+                    <img src="images/daycare.jpeg">
+                </div>
+                <div class="contents">
+                    <h2>Day Care</h2>
+                    <p>Give your feline friend a fun-filled day of play and socialization
+                        with our cat day care service. Our caring staff ensures a safe and
+                        engaging environment for your cat to enjoy.</p>
+                    <a href="daycare.html">Get info</a>
+                </div>
+            </div>
+            <div class="card">
+                <div class="imgBx">
+                    <img src="images/boarding.jpg">
+                </div>
+                <div class="contents">
+                    <h2>Boarding</h2>
+                    <p>When you need to be away, trust us to provide your cat with a
+                        comfortable home away from home. Our cat boarding facilities offer
+                        a secure and cozy space for your pet to relax while you're gone.</p>
+                    <a href="boarding.html">Get info</a>
+                </div>
+            </div>
+            <div class="card">
+                <div class="imgBx">
+                    <img src="images/grooming.jpg">
+                </div>
+                <div class="contents">
+                    <h2>Grooming</h2>
+                    <p>Pamper your beloved cat with our professional grooming services.
+                        We'll keep your cat looking and feeling their best with our gentle
+                        and expert care.</p>
+                    <a href="grooming.html">Get info</a>
+                </div>
+            </div>
+            <div class="card">
+                <div class="imgBx">
+                    <img src="images/training.png">
+                </div>
+                <div class="contents">
+                    <h2>Training</h2>
+                    <p>Unlock your cat's full potential with our cat training service.
+                        Our experienced trainers will help strengthen the bond between you
+                        and your feline companion while teaching them valuable skills.</p>
+                    <a href="training.html">Get info</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="box">
+        <img src="images/cat.jpg">
+
+        <div class="text">
+            <h2>Purrfectly Meow: Where Cats Reign Supreme</h2>
+            <p>At Purrfectly Meow, our passion is pampering your beloved feline friends. From
+                luxurious cat boarding and exciting day care to top-notch grooming, expert training,
+                and thrilling enrichment activities, we're all about giving cats the royal treatment.
+                With a thriving network of over 200 locations in Malaysia, Purrfectly Meow is the
+                ultimate cat care destination Our open-play environments let cats socialize
+                and play to their heart's content, all included in one affordable price. Your cat's
+                happiness and well-being are our top priorities, making Purrfectly Meow the purrfect
+                choice for discerning cat parents.</p>
+            <img src="images/mouse.gif">
+        </div>
+    </div>
+
+    <div class="joins">
+        <div class="join">
+            <h1>Embark on a Journey with Us</h1>
+            <p>Join Today for Pawsome Adventures</p>
+            <a href="appointment.html">Join</a>
+        </div>
+    </div>
+    
+    <script>
+        $(document).ready(function () {
+            // Ask the user for notification permission
+            Notification.requestPermission().then(function (permission) {
+                if (permission === "granted") {
+                    // Store the notification permission in a cookie
+                    document.cookie = "notificationPermission=granted; expires=; path=/";
+                    
+                    // Display a welcome notification
+                    const notification = new Notification("Welcome to our website!", {
+                        body: "Thank you for visiting our website.",
+                        icon: "images/icon.png", // You can specify your own icon
+                    });
+                }
+            });
+        });
+    </script>
+
+    <script>
+        let menuToggle = document.querySelector('.menuToggle');
+        let header = document.querySelector('header');
+        menuToggle.onclick = function () {
+            header.classList.toggle('active');
+        }
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="images/icon.png" type="image/x-icon">
+    <title>Payment Form</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/3.1.9-1/crypto-js.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="donationStyle.css">
+</head>
+
+<body>
+
+    <header>
+        <a href="mainpage.html" class="logo">Purrfectly Meow</a>
+        <div class="menuToggle"></div>
+        <nav>
+            <ul>
+                <li><a href="mainpage.html">Home</a></li>
+                <li><a href="service.html">Services</a> </li>
+                <li><a href="givingback.html">Giving Back</a></li>
+                <li><a href="donation.html">Donation</a></li>
+                <li><a href="aboutus.html">About Us</a></li>
+                <li><a href="login.html">Account Login</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="background"></div>
+
+    <div class=" love-image-container">
+        <img src="images/love.png" alt="Quotes" class="left-top-image">
+        <div class="donation-info">
+            <h3>Why Donate?</h3>
+            <p>
+                Our organization is dedicated to rescuing, rehabilitating, and providing a loving home to pets in
+                need. Your donation helps us provide food, shelter, medical care, and love to these animals.
+            </p>
+        </div>
+    </div>
+
+    <img src="images/Cute-Cat-Wallpaper-of-Kitten_-_Copy-removebg-preview.png" alt="Donation Request"
+        class="left-bottom-image">
+
+    <section class="wrapper">
+        <div class="container">
+
+            <div class="form-container">
+                <form action=" " method="post">
+                    <h4>Account</h4>
+                    <div class="input_group">
+                        <div class="input_box">
+                            <input type="text" placeholder="Full Name" required class="name">
+                            <i class="fa fa-user icon"></i>
+                        </div>
+                        <div class="input_box">
+                            <input type="text" placeholder="Name on Card" required class="name">
+                            <i class="fa fa-user icon"></i>
+                        </div>
+                    </div>
+                    <div class="input_group">
+                        <div class="input_box">
+                            <input type="email" placeholder="Email Address" required class="name">
+                            <i class="fa fa-envelope icon"></i>
+                        </div>
+                    </div>
+                    <div class="input_group">
+                        <div class="input_box">
+                            <input type="text" placeholder="Phone 012-3456789" required class="number"
+                                pattern="\d{3}-\d{7,8}">
+                            <i class="fa fa-phone icon"></i>
+                        </div>
+                    </div>
+
+                    <div class="input_group">
+                        <div class="input_box">
+                            <h4>Date Of Birth</h4>
+                            <input type="text" placeholder="DD" required class="dob">
+                            <input type="text" placeholder="MM" required class="dob">
+                            <input type="text" placeholder="YYYY" required class="dob">
+                        </div>
+                        <div class="input_box">
+                            <h4>Gender</h4>
+                            <input type="radio" name="gender" class="radio" id="b1" value="Male" checked>
+                            <label for="b1">Male</label>
+                            <input type="radio" name="gender" class="radio" id="b2" value="Female">
+                            <label for="b2">Female</label>
+                        </div>
+                    </div>
+
+                    <div class="input_group">
+                        <div class="input_box">
+                            <h4>Payment Details</h4>
+                            <input type="radio" name="pay" class="radio" id="bc1" value="Credit Card" checked>
+                            <label for="bc1"><span>
+                                    <i class="fa fa-cc-visa"></i>Credit Card</span></label>
+                            <input type="radio" name="pay" class="radio" id="bc2" value="Paypal">
+                            <label for="bc2"><span>
+                                    <i class="fa fa-cc-visa"></i>Debit Card</span></label>
+                        </div>
+                    </div>
+                    <div class="input_group">
+                        <div class="input_box">
+                            <input type="tel" name="" class="name" placeholder="Card Number 1111222233334444" required>
+                            <i class="fa fa-credit-card icon"></i>
+                        </div>
+                    </div>
+                    <div class="input_group">
+                        <div class="input_box">
+                            <input type="tel" name="" class="name" placeholder="Card CVV" required>
+                            <i class="fa fa-user icon"></i>
+                        </div>
+                    </div>
+                    <div class="input_group">
+                        <div class="input_box">
+                            <div class="input_box">
+                                <input type="number" placeholder="Exp Month" required class="number">
+                                <i class="fa fa-calendar icon" aria-hidden="true"></i>
+                            </div>
+                        </div>
+                        <div class="input_box">
+                            <input type="number" placeholder="Exp Year" required class="number">
+                            <i class="fa fa-calendar-o icon" aria-hidden="true"></i>
+                        </div>
+                    </div>
+                    <div class="input_box">
+                        <input type="number" placeholder="Enter Amount" required class="name">
+                        <i class="fa fa-money icon" aria-hidden="true"></i>
+                    </div>
+
+                    <div class="input_group">
+                        <div class="input_box">
+                            <button type="submit" id="payNowButton">PAY NOW</button>
+                        </div>
+                    </div>
+
+
+                </form>
+            </div>
+        </div>
+
+    </section>
+    <div class="popup" id="popup">
+        <img src="images/tick.png">
+
+        <h2>Thank You!</h2>
+        <p>Your details have been successfully submitted. Thank you for your generousity!</p>
+        <button type="button" onclick="closePopup()">Ok</button>
+    </div>
+
+    <section class="first">
+        <h3 class="heading">Make A Difference In A Life Of A Shelter Animal</h3>
+        <h1>DONATE</h1>
+        <h2>TODAY</h2>
+    </section>
+
+    <section class="main">
+        <header>
+            <h2>Help a Cat in Need</h2>
+            <p>Your donation could help cover the following costs:</p>
+        </header>
+
+        <ul>
+            <li>
+                <div class="icon-wrap">
+                    <img src="images/catfood.png" alt="catfood">
+                </div>
+                <span>Cat Food</span>
+                <span>RM 50</span>
+            </li>
+            <li>
+                <div class="icon-wrap">
+                    <img src="images/shelter.png" alt="shelter">
+                </div>
+                <span>Shelter</span>
+                <span>RM 100</span>
+            </li>
+            <li>
+                <div class="icon-wrap">
+                    <img src="images/medicine.png" alt="supplies">
+
+                </div>
+                <span>Cat Supplies</span>
+                <span>RM 150</span>
+            </li>
+            <li>
+                <div class="icon-wrap">
+                    <img src="images/hospital.png" alt="emergency">
+                </div>
+                <span>Medication</span>
+                <span>RM 200</span>
+            </li>
+
+        </ul>
+    </section>
+
+    <section class="footer">
+        <p class="text">To schedule an appointment for any of our services, including grooming, boarding, or
+            consultations, please contact us during our business hours or use our online appointment
+            website below:</p>
+        <ul>
+            <a href="https://m.me/" class="fa fa-facebook"></a>
+            <a href="https://wa.me/0137865492" class="fa fa-whatsapp"></a>
+            <a href="https://instagram.com/purr_4meow?utm_source=qr&igshid=MzNlNGNkZWQ4Mg%3D%3D"class="fa fa-instagram"></a>
+            <a href="mailto:meowpurrfectly@gmail.com" class="fa fa-google"></a>
+        </ul>
+        <p class="text">We aim to accommodate your preferred date and time to the best of our
+            ability.</p>
+    </section>
+
+    <script>
+        let popup = document.getElementById("popup");
+
+        function openPopup() {
+            popup.classList.add("open-popup");
+        }
+
+        function closePopup() {
+            popup.classList.remove("open-popup");
+        }
+
+        $(document).ready(function () {
+            $("#payNowButton").click(function (event) {
+                event.preventDefault();
+                console.log("Button clicked");
+
+                let requiredFields = document.querySelectorAll("input[required]");
+                let allFieldsFilled = true;
+
+                requiredFields.forEach(function (field) {
+                    if (field.value.trim() === "") {
+                        allFieldsFilled = false;
+                    }
+                });
+
+                let emailField = $(".name[placeholder='Email Address']");
+                let emailValue = emailField.val();
+                let emailRegex = /^[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,4}$/;
+                if (!emailRegex.test(emailValue)) {
+                    alert("Please enter a valid email address.");
+                    return;
+                }
+                let expYearField = $(".number[placeholder='Exp Year']");
+                let expYearValue = parseInt(expYearField.val(), 10);
+                if (isNaN(expYearValue) || expYearValue < 23) {
+                    alert("Please enter a valid expiration year (minimum 2023).");
+                    return;
+                }
+
+                let dobDD = $(".dob[placeholder='DD']").val();
+                let dobMM = $(".dob[placeholder='MM']").val();
+                let validDay = parseInt(dobDD, 10);
+                let validMonth = parseInt(dobMM, 10);
+
+                if (isNaN(validDay) || validDay < 1 || validDay > 31 || isNaN(validMonth) || validMonth < 1 || validMonth > 12) {
+                    alert("Please enter a valid day and month.");
+                    return;
+                }
+
+                let cardNumberField = $(".name[placeholder='Card Number 1111222233334444']");
+                let cardNumberValue = cardNumberField.val().replace(/\s/g, '');
+                let cardNumberRegex = /^\d{16}$/;
+                if (!cardNumberRegex.test(cardNumberValue)) {
+                    alert("Please enter a valid 16-digit card number.");
+                    return;
+                }
+
+                let cardCVVField = $(".name[placeholder='Card CVV']");
+                let cardCVVValue = cardCVVField.val();
+                let cardCVVRegex = /^\d{3}$/;
+                if (!cardCVVRegex.test(cardCVVValue)) {
+                    alert("Please enter a valid 3-digit CVV.");
+                    return;
+                }
+                let expMonthField = $(".number[placeholder='Exp Month']");
+                let expMonthValue = parseInt(expMonthField.val(), 10);
+                if (isNaN(expMonthValue) || expMonthValue < 1 || expMonthValue > 12) {
+                    alert("Please enter a valid expiration month (1-12).");
+                    return;
+                }
+
+                if (allFieldsFilled) {
+                    saveToLocalStorage();
+
+                    openPopup();
+                } else {
+                    alert("Please fill in all required fields before submitting.");
+                }
+            });
+
+            function saveToLocalStorage() {
+                let fullName = $(".name[placeholder='Full Name']").val();
+                let email = $(".name[placeholder='Email Address']").val();
+                let phone = $(".number[placeholder='Phone 012-3456789']").val();
+                let dobDD = $(".dob[placeholder='DD']").val();
+                let dobMM = $(".dob[placeholder='MM']").val();
+                let dobYYYY = $(".dob[placeholder='YYYY']").val();
+                let gender = $("input[name='gender']:checked").val();
+                let paymentMethod = $("input[name='pay']:checked").val();
+                let cardNumber = $(".name[placeholder='Card Number 1111222233334444']").val();
+                let cardCVV = $(".name[placeholder='Card CVV']").val();
+                let expMonth = $(".name[placeholder='Exp Month']").val();
+                let expYear = $(".number[placeholder='Exp Year']").val();
+                let encryptedCardNumber = CryptoJS.AES.encrypt(cardNumber, 'encryption_secret_key').toString();
+                let encryptedCardCVV = CryptoJS.AES.encrypt(cardCVV, 'encryption_secret_key').toString();
+                let encryptedExpMonth = CryptoJS.AES.encrypt(expMonth, 'encryption_secret_key').toString();
+                let encryptedExpYear = CryptoJS.AES.encrypt(expYear, 'encryption_secret_key').toString();
+                let donationAmount = $(".name[placeholder='Enter Amount']").val();
+
+
+                let userData = {
+                    fullName,
+                    email,
+                    phone,
+                    dobDD,
+                    dobMM,
+                    dobYYYY,
+                    gender,
+                    paymentMethod,
+                    encryptedCardNumber,
+                    encryptedCardCVV,
+                    encryptedExpMonth,
+                    encryptedExpYear,
+                    donationAmount
+                };
+
+                localStorage.setItem("userData", JSON.stringify(userData));
+            }
+
+        });
+
+    </script>
+    <script src="donationScript.js"></script>
+</body>
+
+</html>

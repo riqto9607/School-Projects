@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="images/icon.png" type="image/x-icon">
+    <title>Giving Back | Purrfectly Meow Foundation | Cat Care Services</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="givingbackStyle.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+</head>
+
+<body>
+
+    <div class="scrollTop" onclick="scrolltoTop();">&#8593;</div>
+
+    <section class="banner">
+        <header>
+            <a href="mainpage.html" class="logo"><span>Purrfectly</span> Meow</a>
+            <nav>
+                <ul>
+                    <li><a href="mainpage.html">Home</a></li>
+                    <li><a href="service.html">Services</a>
+                        <ul>
+                            <li><a href="daycare.html">Day Care</a></li>
+                            <li><a href="boarding.html">Boarding</a></li>
+                            <li><a href="grooming.html">Grooming</a></li>
+                            <li><a href="training.html">Training</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="givingback.html">Giving Back</a></li>
+                    <li><a href="donation.html">Donation</a></li>
+                    <li><a href="aboutus.html">About Us</a>
+                        <ul>
+                            <li><a href="aboutus.html">History</a></li>
+                            <li><a href="FAQs.html">FAQs</a></li>
+                            <li><a href="aboutus.html">Contact Us</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="login.html">Account Login</a></li>
+                </ul>
+            </nav>
+            <div class="menu hidden">
+                <ul>
+                    <li><a id="home" href="mainpage.html">Home</a></li>
+                    <li><a href="service.html">Service</a></li>
+                    <li><a href="givingback.html">Giving Back</a></li>
+                    <li><a id="about" href="aboutus.html">About Us</a></li>
+                    <li><a id="donate" href="donation.html">Donate</a></li>
+                    <li><a id="login" href="login.html">Login</a></li>
+                    <li><a href="FAQs.html">FAQs</a></li>
+                </ul>
+            </div>
+            <div class="toggle" onclick="togglemenu(this)">
+                <div class="bar1"></div>
+                <div class="bar2"></div>
+                <div class="bar3"></div>
+            </div>
+        </header>
+        <img src="source/bg2.jpg">
+        <div class="content">
+            <div class="bannerText" id="slideshowText">
+                <div class="active">
+                    <h2>SAVE A PUR LIFE<br></h2>
+                    <h3>Helping Sick & Injured Cats in Need</h3>
+                    <p>Meet the kitties who have received medical care grants from the Purrfectly Meow Foundation®</p>
+                    <a href="#recovery">Read More</a>
+                </div>
+                <div>
+                    <h2>OLIVIA<br></h2>
+                    <h3>&#128008;Our Grant Recipients</h3>
+                    <p>Meet the kitties who have received medical care grants from the Purrfectly Meow Foundation®</p>
+                    <a href="#recovery">Read More</a>
+                </div>
+                <div>
+                    <h2>MARCHAEL & JORDAN<br></h2>
+                    <h3>&#128008;Our Grant Recipients</h3>
+                    <p>Meet the kitties who have received medical care grants from the Purrfectly Meow Foundation®</p>
+                    <a href="#recovery">Read More</a>
+                </div>
+                <div>
+                    <h2>LILY<br></h2>
+                    <h3>&#128008;Our Grant Recipients</h3>
+                    <p>Meet the kitties who have received medical care grants from the Purrfectly Meow Foundation®</p>
+                    <a href="#recovery">Read More</a>
+                </div>
+            </div>
+            <div class="bannerImg" id="slideshow">
+                <img src="source/cat1.jpg" class="active">
+                <img src="source/cat2.jpg">
+                <img src="source/cat3.jpg">
+                <img src="source/cat4.jpg">
+            </div>
+        </div>
+        <div class="icons">
+            <ul class="controls">
+                <li><a onclick="prevSlide();prevSlideText();">&#11164;</a></li>
+                <li><a onclick="nextSlide();nextSlideText()">&#11166;</a></li>
+            </ul>
+        </div>
+    </section>
+
+    <section class="details">
+        <div class="contentBx">
+            <h2 class="heading">Giving Back</h2>
+            <h6>Lending a Helping Pur</h6>
+            <p class="text">
+                Purrfectly Meow® has always been and continues to be committed to giving back to animals in need. The
+                Purrfectly Meow Foundation® is a non-profit organization through which we promote the happiness and
+                health of our furry family members in need.
+            </p>
+
+            <h6>More about the Purrfectly Meow Foundation</h6>
+
+            <p class="text">
+                Countless cats are denied urgent, necessary medical care every year due to the high cost of
+                veterinary treatment. The Purrfectly Meow Foundation is a lifeline for many struggling pet parents who
+                are facing an impossible choice. By easing the financial burdens of treating a sick or injured cats,
+                the Purrfectly Meow Foundation helps to prevent the heartbreaking loss of furry family members in need
+                of medical attention.
+            </p>
+        </div>
+        <div class="imgBx"></div>
+    </section>
+
+    <section class="recovery" id="recovery">
+        <h2 class="heading">Cat's Lives We've Changed</h2>
+        <div class="container">
+            <div class="card">
+                <div class="imgBx">
+                    <img src="source/cat2.jpg">
+                </div>
+                <div class="content">
+                    <h4>Olivia's Journey to Healing</h4>
+                    <p>Meet Olivia, a 2-year-old mackerel tabby cat who had her playful spirit hampered by a serious
+                        injury. Her owner, Sarah, faced a financial challenge. Fortunately, the <b>Purrfectly Meow®
+                            Foundation</b> provided financial support for Olivia's surgery and rehabilitation. Now,
+                        Olivia is
+                        recovering well, bringing joy back to Sarah's life.</p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="imgBx">
+                    <img src="source/cat3.jpg">
+                </div>
+                <div class="content">
+                    <h4>Double the Love: The Duo of Cats</h4>
+                    <p>In their cozy home, Marchael, a serene calico cat, and Jordan, a spirited cyprus cat, received
+                        vital help from the <b>Purrfectly Meow® Foundation</b> when Marchael fell ill, relieving their
+                        owner of
+                        unexpected medical expenses.
+                    </p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="imgBx">
+                    <img src="source/cat4.jpg">
+                </div>
+                <div class="content">
+                    <h4>Lily's Journey to Health</h4>
+                    <p> Lily, a 3-year-old Persian cat known for her grace and beauty, faced a sudden illness that left
+                        her weak. Emily, her owner, sought financial help to restore her health. Kind Hearts for
+                        <b>Purrfectly Meow® Foundation</b> stepped in, providing the necessary medical treatment. Lily
+                        is now
+                        back to her majestic self, bringing joy to Emily's life.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="cat-story">
+        <h2 class="heading">Cat's Fact</h2>
+        <div id="cat-fact-container">
+            <p>Loading cat fact...</p>
+        </div>
+    </section>
+
+    <section class="donation">
+        <div class="contentBx2">
+            <h2>Help with the <span>IM-PURS-IBLE</span></h2>
+            <h2><span>$10 THOUSANDS+ </span>Funds Raised</h2>
+            <h2><span>100+ </span>Cats Helped</h2>
+        </div>
+        <div class="donateBtn">
+            <a href="donation.html">DONATE TODAY</a>
+        </div>
+    </section>
+
+    <section class="footer">
+        <p class="text">To schedule an appointment for any of our services, including grooming, boarding, or
+            consultations, please contact us during our business hours or use our online appointment
+            website below:</p>
+        <ul>
+            <a href="https://m.me/" class="fa fa-facebook"></a>
+            <a href="https://wa.me/0137865492" class="fa fa-whatsapp"></a>
+            <a href="https://instagram.com/purr_4meow?utm_source=qr&igshid=MzNlNGNkZWQ4Mg%3D%3D"class="fa fa-instagram"></a>
+            <a href="mailto:meowpurrfectly@gmail.com" class="fa fa-google"></a>
+        </ul>
+        <p class="text">We aim to accommodate your preferred date and time to the best of our
+            ability.</p>
+    </section>
+
+
+    <script type="text/javascript">
+
+        function fetchRandomCatFact() {
+            const catFactUrl = 'https://catfact.ninja/fact';
+
+            $.get(catFactUrl, function (data) {
+                // Extract the cat fact from the API response
+                const catFact = data.fact;
+
+                // Display the cat fact in the container
+                $('#cat-fact-container').html(`<p>${catFact}</p>`);
+            })
+                .fail(function (error) {
+                    console.error('Error fetching cat fact:', error);
+                    $('#cat-fact-container').html(`<p>Error fetching cat fact. Please try again later.</p>`);
+                });
+        }
+
+        $(document).ready(function () {
+            fetchRandomCatFact();
+        });
+
+        var slideshow = document.getElementById("slideshow");
+        var slides = slideshow.getElementsByTagName("img");
+        var index = 0;
+
+        function prevSlide() {
+            slides[index].classList.remove("active");
+            index = (index - 1 + slides.length) % slides.length;
+            slides[index].classList.add("active");
+        }
+
+        function nextSlide() {
+            slides[index].classList.remove("active");
+            index = (index + 1) % slides.length;
+            slides[index].classList.add("active");
+        }
+
+        var slideshow = document.getElementById("slideshowText");
+        var slidesText = slideshowText.getElementsByTagName("div");
+        var indexText = 0;
+
+        function prevSlideText() {
+            slidesText[indexText].classList.remove("active");
+            indexText = (indexText - 1 + slidesText.length) % slidesText.length;
+            slidesText[indexText].classList.add("active");
+        }
+
+        function nextSlideText() {
+            slidesText[indexText].classList.remove("active");
+            indexText = (indexText + 1) % slidesText.length;
+            slidesText[indexText].classList.add("active");
+        }
+
+        window.addEventListener('scroll', function () {
+            var scroll = document.querySelector('.scrollTop');
+            scroll.classList.toggle("active", window.scrollY > 500);
+        })
+
+        function scrolltoTop() {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            })
+        }
+
+        function togglemenu(x) {
+
+            x.classList.toggle("change");
+
+            var menu = document.getElementsByClassName("menu")[0];
+
+            menu.classList.toggle("hidden");
+        }
+    </script>
+
+</body>
+
+</html>

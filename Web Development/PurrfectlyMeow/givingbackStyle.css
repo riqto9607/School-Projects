@@ -1,0 +1,629 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+.banner {
+    position: relative;
+    width: 100%;
+    padding: 100px;
+    background: #496fa1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.banner>img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0.20;
+}
+
+.banner header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 0px 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 10000;
+}
+
+.banner header .logo {
+    color: #fff;
+    text-decoration: none;
+    font-size: 24px;
+    text-transform: uppercase;
+    font-weight: 800;
+    letter-spacing: 1px;
+}
+
+.banner header .logo span {
+    color: #95A6ED;
+}
+
+.banner header nav ul{
+    position: relative;
+}
+
+.banner header nav ul li{
+    position: relative;
+    list-style: none;
+    float: left;
+}
+
+.banner header nav ul li a{
+    color: #fff;
+    font-size: 1.1em;
+    padding: 20px 25px;
+    text-decoration: none;
+    display: flex;
+    justify-content: space-between;
+}
+
+.banner header nav ul li a:hover{
+    background: #91b1eb;
+}
+
+.banner header nav ul li ul{
+    position: absolute;
+    left: 0;
+    width: 200px;
+    background: #7591be;
+    display: none;
+}
+
+.banner header nav ul li:hover ul{
+    display: block;
+}
+
+.banner header nav ul li ul li{
+    position: relative;
+    width: 100%;
+    border: 1px solid rgba(0,0,0,0.2);
+}
+
+.toggle, .menu {
+    display: none;
+}
+
+.content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 50px;
+}
+
+.content .bannerText {
+    position: relative;
+    max-width: 500px;
+    margin-right: 50px;
+}
+
+.content .bannerText h2 {
+    font-size: 40px;
+    text-transform: uppercase;
+    font-weight: 800;
+    line-height: 1.2em;
+    color: #fff;
+}
+
+.content .bannerText h3 {
+    color: #95A6ED;
+    font-size: 20px;
+    text-transform: uppercase;
+    font-weight: 800;
+}
+
+.content .bannerText p {
+    font-size: 18px;
+    color: #fff;
+    line-height: 1.8em;
+    margin: 20px 0;
+}
+
+.content .bannerText a {
+    position: relative;
+    display: inline-block;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: #fff;
+    letter-spacing: 1px;
+    font-size: 18px;
+    text-decoration: none;
+    padding: 15px;
+    z-index: 1;
+}
+
+.content .bannerText a:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 60px;
+    height: 100%;
+    background: #95A6ED;
+    z-index: -1;
+    transition: 0.5s ease-in-out;
+    opacity: 0.9;
+}
+
+.content .bannerText a:hover:before {
+    width: 100%;
+}
+
+.content .bannerImg {
+    position: relative;
+    max-width: 100%;
+    width: 450px;
+    height: 430px;
+    background: #95A6ED;
+    border-top-left-radius: 90px;
+    border-bottom-left-radius: 90px;
+    opacity: 0.9;
+}
+
+.content .bannerImg img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-top-left-radius: 90px;
+    border-bottom-left-radius: 90px;
+    margin-left: 30px;
+    object-fit: cover;
+    transition: 0.5s;
+    opacity: 0;
+}
+
+.content .bannerImg img.active {
+    opacity: 1;
+}
+
+.icons .controls {
+    position: relative;
+    display: flex;
+    top: 300px;
+    right: 50px;
+}
+
+.icons .controls li {
+    list-style: none;
+    margin-left: 10px;
+    cursor: pointer;
+    color: #fff;
+    font-size: 30px;
+    padding: 10px;
+    transition: 0.5s ease-in-out;
+}
+
+.icons .controls li:hover {
+    opacity: 0.5;
+}
+
+.content .bannerText div {
+    display: none;
+}
+
+.content .bannerText div.active {
+    display: initial;
+}
+
+.details {
+    position: relative;
+    width: 100%;
+    display: flex;
+}
+
+.contentBx {
+    background: #1f465f;
+    padding: 100px;
+    width: 50%;
+}
+
+.heading {
+    color: #fff;
+    font-size: 35px;
+    font-weight: 800;
+    letter-spacing: 1px;
+    margin-bottom: 10px;
+}
+
+h6 {
+    color: #95A6ED;
+    font-size: 15px;
+    font-weight: 800;
+    letter-spacing: 1px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+.text {
+    color: #fff;
+    font-size: 15px;
+    font-weight: 300;
+    letter-spacing: 1px;
+}
+
+.details .imgBx {
+    background: url(source/cat4.png);
+    width: 50%;
+    background-size: cover;
+    background-position: center;
+}
+
+.recovery {
+    background: #163f57;
+    position: relative;
+    text-align: center;
+    padding: 50px;
+}
+
+.recovery .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 30px;
+}
+
+.container .card {
+    position: relative;
+    max-width: 320px;
+    height: 215px;
+    background: #fff;
+    margin: 40px 10px;
+    padding: 20px 15px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 5px 202px rgba(0, 0, 0, 0.5);
+    transition: 0.3s ease-in-out;
+}
+
+.container .card:hover {
+    height: 100%;
+}
+
+.container .card .imgBx {
+    position: relative;
+    width: 200px;
+    height: 200px;
+    top: -60px;
+    left: 20px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
+}
+
+.container .card .imgBx img {
+    width: 250px;
+    height: 280px;
+    border-radius: 4px;
+}
+
+.container .card .content {
+    display: block;
+    position: relative;
+    margin: 20px;
+    color: #111;
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.3s ease-in-out;
+}
+
+.container .card .content h2{
+    text-align: center;
+}
+
+.container .card .content p{
+    text-align: center;
+}
+
+.container .card:hover .content {
+    visibility: visible;
+    opacity: 1;
+    margin-top: 40px;
+    transition-delay: 0.3s;
+}
+
+.container .content b {
+    color: #95A6ED;
+}
+
+.donation {
+    position: relative;
+    padding: 100px;
+    background: #1f465f;
+    text-align: center;
+}
+
+.donation .contentBx2 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 40px;
+    flex-wrap: wrap;
+}
+
+.donation .contentBx2 h2 {
+    color: #fff;
+    font-weight: 800;
+}
+
+.donation .contentBx2 span {
+    color: #95A6ED;
+    font-size: 30px;
+}
+
+.donation .donateBtn a {
+    margin-top: 50px;
+    position: relative;
+    display: inline-block;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: #fff;
+    letter-spacing: 1px;
+    font-size: 18px;
+    text-decoration: none;
+    padding: 15px;
+    z-index: 1;
+}
+
+.donation .donateBtn a:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 60px;
+    height: 100%;
+    background: #95A6ED;
+    z-index: -1;
+    transition: 0.5s ease-in-out;
+    opacity: 0.9;
+}
+
+.donation .donateBtn a:hover:before {
+    width: 100%;
+}
+
+.cat-story{
+    position: relative;
+    padding: 100px;
+    background: #043c5e;
+    text-align: center;
+}
+
+.cat-story h2{
+    margin-bottom: 30px;
+}
+
+.cat-story p{
+    color: #fff;
+}
+
+
+.footer {
+    background: #162c3b;
+    padding: 20px 100px;
+    text-align: center;
+}
+
+.footer ul a {
+    color: #fff;
+    font-size: 20px;
+    text-decoration: none;
+}
+
+.footer ul a:hover {
+    opacity: 0.8;
+}
+
+.scrollTop {
+    position: fixed;
+    bottom: 40px;
+    right: 40px;
+    width: 30px;
+    height: 30px;
+    color: #fff;
+    font-size: 25px;
+    border: 4px solid #fff;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    z-index: 10000;
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.5s;
+}
+
+.scrollTop.active {
+    visibility: visible;
+    opacity: 1;
+}
+
+@media (max-width: 1120px) {
+
+    .banner {
+        padding: 40px;
+    }
+
+    .banner header{
+        padding: 20px 30px;
+    }
+
+    .banner header .logo {
+        position: relative;
+        font-size: 22px;
+    }
+
+    .banner header nav{
+        display: none;
+    }
+
+    .toggle {
+        display: inline-block;
+        cursor: pointer;
+    }
+    
+    .bar1,
+    .bar2,
+    .bar3 {
+        width: 35px;
+        height: 5px;
+        background-color: #fff;
+        margin: 6px 0;
+        transition: 0.4s;
+    }
+    
+    .change .bar1 {
+        transform: translate(0, 11px) rotate(-45deg);
+    }
+    
+    .change .bar2 {
+        opacity: 0;
+    }
+    
+    .change .bar3 {
+        transform: translate(0, -11px) rotate(45deg);
+    }
+    
+    .menu.hidden {
+        display: none;
+    }
+    
+    .menu {
+        flex: 1;
+        text-align: right;
+        margin-top: 28px;
+        margin-right: 100px;
+        transition: max-height 0.5s ease-out, opacity 0.5s ease-out;
+        max-height: 0;
+        opacity: 0;
+        display: flex;
+    }
+    
+    .menu:not(.hidden) {
+        max-height: 100%;
+        opacity: 1;
+    }
+
+    .menu ul {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: #163f57;
+        z-index: 0;
+        flex-direction: column;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: 0.2s;
+    }
+
+    .menu ul li {
+        list-style: none;
+        display: inline-block;
+    }
+
+    .menu ul li a {
+        text-decoration: none;
+        color: #fff;
+        display: inline-block;
+        transition: 0.5s;
+        font-weight: 600;
+        font-size: 30px;
+        margin: 10px 0;
+    }
+
+    .menu ul li a:hover {
+        color: #95A6ED;
+    }
+
+    .content{
+        margin: 90px;
+    }
+
+}
+
+@media (max-width: 1070px) {
+
+    .content {
+        display: flex;
+        margin: 80px;
+        flex-direction: column;
+    }
+
+    .content .bannerText {
+        margin-right: 0;
+    }
+    .content .bannerText h2 {
+        font-size: 30px;
+    }
+    .content .bannerText a {
+        font-size: 18px;
+        padding: 10px;
+        z-index: 1;
+    }
+    .content .bannerImg {
+        height: 0;
+    }
+    .icons .controls {
+        top: 100px;
+    }
+    .details .imgBx{
+        display: none;
+    }
+    .details .contentBx{
+        width: 100%;
+    }
+    .container .card .content{
+        margin: 0;
+    }
+    .donation .contentBx2 h2{
+        display: block;
+        margin: 10px;
+        font-size: 25px;
+    }
+    .donation .contentBx2 span{
+        font-size: 25px;
+    }
+
+}
+
+@media (max-width: 730px){
+    .banner header .logo {
+        font-family: sans-serif;
+        position: relative;
+        font-size: 18px;
+    }
+    .content{
+        width: 100%;
+    }
+    .content .bannerText h2 {
+        font-family: sans-serif;
+        font-size: 28px;
+    }
+    .icons .controls{
+        display: none;
+    }
+    .details .contentBx{
+        padding: 40px;
+    }
+    .donation .contentBx2{
+        display: block;
+    }
+    .footer{
+        padding: 40px;
+    }
+}
