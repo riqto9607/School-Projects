@@ -12,7 +12,7 @@ This repository documents the Cybersecurity Group Assignment completed as part o
 
 | Student Name    | Student ID   | Practical Group | Programme |
 |------------------|---------------|------------------|-----------|
-| Foo Kar Yeng     | 2300422       | P3               | CN        |
+| **Foo Kar Yeng**    | 2300422       | P3               | CN        |
 | **Liew Ren Yi**     | 2300434       | P4               | CN        |
 | **Tan Yi Fei**      | 2200842       | P3               | CN        |
 | **Wong Pei Kei**    | 2207466       | P4               | CN        |
