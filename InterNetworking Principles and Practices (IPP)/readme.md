@@ -58,17 +58,6 @@ I was fully responsible for **Part 2** of the assignment, which included both **
 
 ---
 
-## How to Run the Project
-
-1. Open the provided GNS3 topology.
-2. Start all devices: PC1, PC2, Edge Router, Internet Gateway, Telnet Server.
-3. Verify interface configurations and routing.
-4. Initiate packet captures on PC1 and Edge Router interfaces.
-5. Use ping and telnet commands to observe network behavior.
-6. Analyze captured traffic in Wireshark to see NAT, ACL, and routing effects.
-
----
-
 ## References
 
 Please refer to the assignment report for a full list of sources (pages 20–21), including:
