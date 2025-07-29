@@ -1,6 +1,6 @@
 # 📚 School Projects Portfolio
 
-This repository showcases a collection of academic projects completed during my undergraduate studies at Universiti Tunku Abdul Rahman (UTAR), covering areas such as artificial intelligence, cybersecurity, embedded systems, server administration, web development, and more. Each project demonstrates practical applications of concepts learned in class, with code and implementation files included.
+This repository showcases a collection of academic projects completed during my undergraduate studies at Universiti Tunku Abdul Rahman (UTAR), covering areas such as AI, cybersecurity, embedded systems, server administration, web development, and more. Each project demonstrates practical applications of concepts learned in class, with code and implementation files included.
 
 ## 🔍 Project Highlights
 
